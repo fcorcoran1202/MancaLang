@@ -2,13 +2,8 @@ Program:
     'Board'
         board*=BoardSpec
     'Rules'
-        gametype=Game
         rules*=Rule
     'Play'
-;
-
-Game:
-    "Mancala" | "Oware" | "AyoAyo"
 ;
 
 Rule:
