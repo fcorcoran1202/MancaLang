@@ -1,0 +1,61 @@
+body {
+    width: 100%;
+    height: 109vh;
+    background:
+        linear-gradient(rgba(86, 86, 86, 0.9), rgba(0, 0, 0, 0.9)), 
+        url('marbles.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+    text-shadow: 5px 5px black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+p {
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button { 
+    background-color: #2b3137;
+    border: 2px solid #24292e;
+    color: white;
+    padding: 20px 34px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+  }

@@ -1,0 +1,55 @@
+Program:
+    'Board'
+        board*=BoardSpec
+    'Rules'
+        gametype=Game
+        rules*=Rule
+    'Play'
+;
+
+Game:
+    "Mancala" | "Oware" | "AyoAyo"
+;
+
+Rule:
+    CaptureRule | TurnRule | MultiplierRule | ReverseRule | RandomRule
+;
+
+CaptureRule:
+    'Capture' 'when' condition=Condition
+;
+
+TurnRule:
+    'ExtraTurn' 'when' condition=Condition
+;
+
+Condition:
+    'LastSeed' 'in' pit=INT
+;
+
+MultiplierRule:
+    'Multiply' pit=INT 'by' multiplier=INT
+;
+
+ReverseRule:
+    'Reverse'
+;
+
+Randomrule:
+    'Randomize'
+;
+
+BoardSpec:
+    PitNum | SeedNum
+;
+
+PitNum:
+    'Pits' pit=INT
+;
+
+SeedNum:
+    'Seeds' seed=INT
+;
+
+Comment:
+  /\/\/.*$/ 
