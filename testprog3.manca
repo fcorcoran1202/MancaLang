@@ -1,0 +1,13 @@
+Board
+    Pits 6
+    Seeds 2
+Rules
+    Randomize
+    Multiply 2 by 4
+    Multiply 3 by 9
+    Multiply 5 by 4
+    Multiply 4 by 9
+    Capture when LastSeed in 1
+    Capture when LastSeed in 6
+Play
+

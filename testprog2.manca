@@ -1,0 +1,11 @@
+Board
+    Pits 24
+    Seeds 8
+Rules
+    Reverse
+    Capture when LastSeed in 1
+    Capture when LastSeed in 24
+    ExtraTurn when LastSeed in 13
+    ExtraTurn when LastSeed in 12
+Play
+
